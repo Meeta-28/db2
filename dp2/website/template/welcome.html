@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital news</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./signup_page.html">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="./logo1.png" alt="" class="logo">
+            <ul>
+                <li class="name"> Digitalbuzz</li>
+            </ul>
+            <ul class="nav-links">
+                <li><a href="#">Home </a></li>
+                <li><a href="">article</a></li>
+                <li><a href="">feedbacks</a></li>
+                <li><a href="">contacts</a></li>
+                <li class="btn"><a href="./signup_page.html">Signup</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Learn Anything online</h1>
+            <form action="">
+                <input type="text" placeholder="&#x270e; Enter keyword">
+                <button type="submit">Find news</button>
+            </form>
+
+            <div class="category-list">
+                <div class="category"></div>
+                <div class="category"></div>
+                <div class="category"></div>
+                <div class="category"></div>
+                <div class="category"></div>
+            </div>
+        </div>
+
+    </div>
+    <section class="about">
+        <div class="main">
+            <img src="adani.jpg" alt="">
+            <div class="about-text">
+                <h2>latest News</h2>
+                <h5> Gautam Adani</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, beatae nostrum fuga voluptates modi, nihil, ea placeat minus animi veniam sint quae hic doloribus quasi nesciunt ab facere unde atque. Recusandae, a? Natus minus distinctio neque, sit repudiandae voluptate dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus obcaecati et nisi quod inventore adipisci, delectus repellendus. Nulla suscipit distinctio architecto consequatur soluta animi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error at repellat dignissimos, asperiores odit aspernatur? A, nihil? Minus, adipisci fuga.</p>
+                <button type="button"><a href="https://www.aajtak.in/topic/gautam-adani">Read more</a></button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 140px;
+
+}
+.nav-links{
+    padding: 28px 0;
+}
+.nav-links li{
+    display: inline;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-links li a:hover::after{
+    /* background-color: rgb(220, 63, 165);
+    transition: .4s;
+    transform: scale(1.3); */
+    width: 100%;
+
+}
+.name{
+    padding: 28px 0;
+    display: inline;
+    margin: 0 15px;
+    color: black;
+    position: relative;
+    right: 0;
+    width: 20px;
+    height: 4px;
+    
+
+}
+.btn{
+    background:red;
+    color:black;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+}
+.btn:hover {
+    /* color: green; */
+    background-color: aqua;
+    transition: .4s;
+    transform: scale(1.3);
+}
+.content{
+    position: absolute;
+    left: 50%;
+   top: 50%;
+   width: 90%;
+   max-width: 900px;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   color: black;
+    padding-top: 50px;
+
+}
+.content h1{
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 40px;
+
+}
+.content form{
+    background: black;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+}
+.content form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.content form button{
+    background: #ff3d00;
+    color: black;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+
+}
+.category-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+.category{
+    width: 80px;
+    height: 80px;
+    background: rgba(255,61,0,0.15);
+    margin: 0 10px;
+    
+}
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: black;
+}
+.about img{
+    height: auto;
+    width: 430px;
+
+}
+.about-text{
+    width: 550px;
+
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: aqua;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: aqua;
+    transition: .4s;
+    transform: scale(1.3);
+}
+
+</style>
